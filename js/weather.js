@@ -1,5 +1,3 @@
-const API_KEY = "3f1080daaa82238171677acb23f60d35"
-
 function onGeoOK(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
@@ -10,10 +8,9 @@ function onGeoOK(position) {
         const weather = document.querySelector("#weather span:first-child")
         const city = document.querySelector("#weather span:last-child")
 
-        city.innerText = `city: ${data.name}`;
-        weather.innerText = `weather: ${data.weather[0].main} / temp: ${data.main.temp} `;
+        weather.innerText = ` ${data.weather[0].main} / ${data.main.temp} / `;
+        city.innerText = `${data.name}`;
     });
-
 }
 function onGeoError() {
     alert("Can't find you. No weather for you.");
