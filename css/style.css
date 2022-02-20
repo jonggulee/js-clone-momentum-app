@@ -1,0 +1,73 @@
+* {
+    margin:0px;
+    padding: 0px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  img {
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+  }
+  
+  #apps {
+    height:100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .top {
+    display: flex;
+    width: 97vw;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .middle {
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  #clock {
+    font-size: 90pt;
+  }
+  
+  #login-form input, #todo-form input {
+    width: 450px;
+    background-color: transparent;
+    border: none;
+    font-size: 20pt;
+    border-bottom: 1px solid white;
+    color: white;
+    text-align: center;
+  }
+  #login-form input:active, #login-form input:focus, #todo-form input:active, #todo-form input:focus{
+    outline: none;
+  }
+  
+  #login-form input::placeholder, #todo-form input::placeholder {
+    color: white;
+    text-align: center;
+  }
+  
+  
+  #quote {
+    text-align: center;
+    padding: 10px;
+    width: 100vw;
+    z-index: 10;
+  }
